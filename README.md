@@ -233,7 +233,7 @@ Firebase Storage es un servicio en la nube proporcionado por Firebase, que permi
 
 # 4. Mockups
 
-![Untitled](https://raw.githubusercontent.com/Aegisystem/FlouTask/main/Assets/Diagrama_de_caso_de_uso_(1).png)
+![Untitled](https://raw.githubusercontent.com/Aegisystem/FlouTask/main/Assets/Untitled.png)
 
 ![Untitled](FLOUTASK%20(PROGRA-MO%CC%81VIL)%20f06f66c52add4cda8ba28e1c62554169/Untitled%201.png)
 

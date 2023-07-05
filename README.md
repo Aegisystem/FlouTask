@@ -181,7 +181,7 @@ Firebase Storage es un servicio en la nube proporcionado por Firebase, que permi
 3. Configura tu aplicación para utilizar el archivo de configuración **`google-services.json`** o **`GoogleService-Info.plist`** que descargaste en el paso anterior.
 4. Sigue las instrucciones de Firebase para inicializar Firebase Storage en tu aplicación y comenzar a utilizarlo para almacenar y recuperar archivos.
 
-# 2. Requerimientos No Funcionales y Diagrama de Despliegue
+# 2. Requerimientos No Funcionales & Diagrama de Despliegue
 
 ### REQUERIMIENTOS NO FUNCIONALES →
 
@@ -202,7 +202,7 @@ Firebase Storage es un servicio en la nube proporcionado por Firebase, que permi
 - La aplicación debe ser consistente y confiable en su funcionamiento, gestionando adecuadamente los errores y excepciones para ofrecer una alta calidad en su rendimiento.
 - La aplicación debe ser rápida y eficiente en el procesamiento de los datos y acciones de los usuarios, con tiempos de respuesta cortos y una gestión adecuada de la carga para ofrecer una experiencia satisfactoria.
 
-### DIAGRAMAS DE DESPLIEGUE →
+### DIAGRAMA DE DESPLIEGUE →
 
 ![Diagrama Despliegue](https://raw.githubusercontent.com/Aegisystem/FlouTask/main/Assets/Diagrama_Despliegue.drawio_(2).png)
 

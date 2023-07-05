@@ -225,11 +225,11 @@ Firebase Storage es un servicio en la nube proporcionado por Firebase, que permi
 
 ![Diagrama de caso de uso 1](https://raw.githubusercontent.com/Aegisystem/FlouTask/main/Assets/Diagrama_de_caso_de_uso.png)
 
-![Diagrama de caso de uso 2](https://raw.githubusercontent.com/Aegisystem/FlouTask/main/Assets/Diagrama_de_caso_de_uso%201.png)
+![Diagrama de caso de uso 2](https://raw.githubusercontent.com/Aegisystem/FlouTask/main/Assets/Diagrama_de_caso_de_uso_(1).png)
 
-![Diagrama de caso de uso 3](https://raw.githubusercontent.com/Aegisystem/FlouTask/main/Assets/Diagrama_de_caso_de_uso%203.png)
+![Diagrama de caso de uso 3](https://raw.githubusercontent.com/Aegisystem/FlouTask/main/Assets/Diagrama_de_caso_de_uso_(3).png)
 
-![Diagrama de caso de uso 4](https://raw.githubusercontent.com/Aegisystem/FlouTask/main/Assets/Diagrama_de_caso_de_uso%204.png)  
+![Diagrama de caso de uso 4](https://raw.githubusercontent.com/Aegisystem/FlouTask/main/Assets/Diagrama_de_caso_de_uso_(4).png)  
 
 # 4. Mockups
 

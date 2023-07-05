@@ -204,7 +204,7 @@ Firebase Storage es un servicio en la nube proporcionado por Firebase, que permi
 
 ### DIAGRAMAS DE DESPLIEGUE →
 
-![Diagrama Despliegue.drawio (2).png](FLOUTASK%20(PROGRA-MO%CC%81VIL)%20f06f66c52add4cda8ba28e1c62554169/Diagrama_Despliegue.drawio_(2).png)
+![Diagrama Despliegue](https://raw.githubusercontent.com/Aegisystem/FlouTask/main/Assets/Diagrama_Despliegue.drawio_(2).png)
 
 # 3. Requerimientos Funcionales & Casos de uso
 
@@ -223,22 +223,22 @@ Firebase Storage es un servicio en la nube proporcionado por Firebase, que permi
 
 ### DIAGRAMAS DE CASOS DE USO →
 
-![Diagrama de caso de uso.png](FLOUTASK%20(PROGRA-MO%CC%81VIL)%20f06f66c52add4cda8ba28e1c62554169/Diagrama_de_caso_de_uso.png)
+![Diagrama de caso de uso 1](https://raw.githubusercontent.com/Aegisystem/FlouTask/main/Assets/Diagrama_de_caso_de_uso.png)
 
-![Diagrama de caso de uso (1).png](FLOUTASK%20(PROGRA-MO%CC%81VIL)%20f06f66c52add4cda8ba28e1c62554169/Diagrama_de_caso_de_uso_(1).png)
+![Diagrama de caso de uso 2](https://raw.githubusercontent.com/Aegisystem/FlouTask/main/Assets/Diagrama_de_caso_de_uso%201.png)
 
-![Diagrama de caso de uso (3).png](FLOUTASK%20(PROGRA-MO%CC%81VIL)%20f06f66c52add4cda8ba28e1c62554169/Diagrama_de_caso_de_uso_(3).png)
+![Diagrama de caso de uso 3](https://raw.githubusercontent.com/Aegisystem/FlouTask/main/Assets/Diagrama_de_caso_de_uso%203.png)
 
-![Diagrama de caso de uso (4).png](FLOUTASK%20(PROGRA-MO%CC%81VIL)%20f06f66c52add4cda8ba28e1c62554169/Diagrama_de_caso_de_uso_(4).png)  
+![Diagrama de caso de uso 4](https://raw.githubusercontent.com/Aegisystem/FlouTask/main/Assets/Diagrama_de_caso_de_uso%204.png)  
 
 # 4. Mockups
 
-![Untitled](https://raw.githubusercontent.com/Aegisystem/FlouTask/main/Assets/Untitled.png)
+![Mockup 1](https://raw.githubusercontent.com/Aegisystem/FlouTask/main/Assets/Untitled.png)
 
-![Untitled](FLOUTASK%20(PROGRA-MO%CC%81VIL)%20f06f66c52add4cda8ba28e1c62554169/Untitled%201.png)
+![Mockup 2](https://raw.githubusercontent.com/Aegisystem/FlouTask/main/Assets/Untitled%201.png)
 
-![Untitled](FLOUTASK%20(PROGRA-MO%CC%81VIL)%20f06f66c52add4cda8ba28e1c62554169/Untitled%202.png)
+![Mockup 3](https://raw.githubusercontent.com/Aegisystem/FlouTask/main/Assets/Untitled%202.png)
 
-![Untitled](FLOUTASK%20(PROGRA-MO%CC%81VIL)%20f06f66c52add4cda8ba28e1c62554169/Untitled%203.png)
+![Mockup 4](https://raw.githubusercontent.com/Aegisystem/FlouTask/main/Assets/Untitled%203.png)
 
-![Untitled](FLOUTASK%20(PROGRA-MO%CC%81VIL)%20f06f66c52add4cda8ba28e1c62554169/Untitled%204.png)
+![Mockup 5](https://raw.githubusercontent.com/Aegisystem/FlouTask/main/Assets/Untitled%204.png)

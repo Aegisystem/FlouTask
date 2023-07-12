@@ -1,40 +1,54 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
+
 
 class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Welcome to FlouTask'),
-      ),
+      backgroundColor: Color(0xFFE2C6A9), // Establecer el color de fondo del Scaffold
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Padding(
-              padding: EdgeInsets.only(bottom: 4.0),
-              child: Image.asset(
-                'assets/logo.png', // Ruta de la imagen del logo
-                width: 100.0,
-                height: 100.0,
+              padding: EdgeInsets.only(bottom: 16.0),
+              child: SvgPicture.asset(
+                'assets/logo.svg',
+                semanticsLabel: 'My SVG Image',
+                height: 100,
+                width: 70,
               ),
             ),
             Padding(
-              padding: EdgeInsets.symmetric(horizontal: 20.0),
+              padding: EdgeInsets.symmetric(horizontal: 50.0),
               child: TextField(
+                style: TextStyle(color: Colors.brown), // Establecer color de texto
+                cursorColor: Colors.black, // Establecer color del cursor
                 decoration: InputDecoration(
+                  filled: true,
+                  fillColor: Colors.white, // Establecer color de fondo del campo de texto
                   hintText: 'Busca en tus proyectos :)',
-                  suffixIcon: Icon(Icons.search),
+                  hintStyle: TextStyle(color: Colors.grey), // Establecer color del texto de sugerencia
+                  suffixIcon: Icon(Icons.search, color: Colors.black), // Establecer color del icono de búsqueda
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(20.0), // Establecer bordes redondeados
+                    borderSide: BorderSide.none, // Eliminar borde del campo de texto
+                  ),
                 ),
               ),
             ),
-            SizedBox(height: 8.0),
-            ElevatedButton.icon(
-              onPressed: () {
-                // Acción cuando se presiona el botón "+"
-              },
-              icon: Icon(Icons.add),
-              label: Text('Agregar'),
+            SizedBox(height: 16.0),
+            CircleAvatar(
+              radius: 20.0,
+              backgroundColor: Colors.white,
+              child: IconButton(
+                icon: Icon(Icons.add),
+                color: Colors.brown,
+                onPressed: () {
+                  // Acción cuando se presiona el botón "+"
+                },
+              ),
             ),
           ],
         ),

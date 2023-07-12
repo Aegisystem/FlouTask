@@ -1,7 +1,8 @@
+import 'package:floutask_app/screens/login.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MaterialApp(home: GoogleAuthenticator()));
 }
 
 class MyApp extends StatelessWidget {

@@ -2,7 +2,7 @@ import 'package:floutask_app/screens/login.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MaterialApp(home: GoogleAuthenticator()));
+  runApp(MaterialApp(home: Login()));
 }
 
 class MyApp extends StatelessWidget {

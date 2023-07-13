@@ -1,6 +1,13 @@
 import 'package:flutter/material.dart';
 
-class Home extends StatelessWidget {
+class Home extends StatefulWidget {
+  @override
+  _HomeState createState() => _HomeState();
+}
+
+class _HomeState extends State<Home> {
+  bool _isButtonPressed = false;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -11,18 +18,16 @@ class Home extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             SizedBox(height: 40.0),
-
             Flexible(
               flex: 2,
               child: Padding(
-                padding: EdgeInsets.all(20.0), // Ajusta el valor del padding según tus necesidades
+                padding: EdgeInsets.all(20.0),
                 child: Image.asset(
                   'assets/images/nameicon.png',
                   scale: 15,
                 ),
               ),
             ),
-
             Padding(
               padding: EdgeInsets.symmetric(horizontal: 50.0),
               child: TextField(
@@ -41,18 +46,38 @@ class Home extends StatelessWidget {
                 ),
               ),
             ),
-
-            // BOTON AGREGAR PROYECTO
             SizedBox(height: 16.0),
-            CircleAvatar(
-              radius: 20.0,
-              backgroundColor: Colors.white,
-              child: IconButton(
-                icon: Icon(Icons.add_sharp),
-                color: Colors.brown,
-                onPressed: () {
-                  Navigator.pushNamed(context, '/addproject');
-                },
+            GestureDetector(
+              onTapDown: (_) {
+                setState(() {
+                  _isButtonPressed = true;
+                });
+              },
+              onTapUp: (_) {
+                setState(() {
+                  _isButtonPressed = false;
+                });
+              },
+              onTapCancel: () {
+                setState(() {
+                  _isButtonPressed = false;
+                });
+              },
+              child: AnimatedContainer(
+                duration: Duration(milliseconds: 300),
+                curve: Curves.easeInOut,
+                transform: Matrix4.identity()..scale(_isButtonPressed ? 1.2 : 1.0),
+                child: CircleAvatar(
+                  radius: 20.0,
+                  backgroundColor: Colors.white,
+                  child: IconButton(
+                    icon: Icon(Icons.add_sharp),
+                    color: Colors.brown,
+                    onPressed: () {
+                      Navigator.pushNamed(context, '/addproject.dart');
+                    },
+                  ),
+                ),
               ),
             ),
           ],
@@ -60,4 +85,3 @@ class Home extends StatelessWidget {
       ),
     );
   }
-}

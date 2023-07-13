@@ -1,9 +1,11 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:floutask_app/screens/home.dart';
 import 'package:floutask_app/services/Authenticator.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class Login extends StatelessWidget {
   @override
@@ -28,7 +30,12 @@ class Login extends StatelessWidget {
               child: MaterialButton(
                 onPressed: () async {
                   User? user = await Authenticator.iniciarSesion(context: context);
-                  print(user?.displayName);
+                  if(user != null) {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => Home()),
+                    );
+                  }
                 },
                 color: Colors.white,
                 height: 50,
@@ -42,6 +49,7 @@ class Login extends StatelessWidget {
                       style: TextStyle(
                         fontSize: 16,
                         color: Colors.brown,
+                        fontFamily: GoogleFonts.oxygen().fontFamily,
                       ),
                     ),
                   ],

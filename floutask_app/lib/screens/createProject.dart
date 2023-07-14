@@ -52,122 +52,127 @@ class _CreateProjectState extends State<CreateProject> {
           ),
         ),
       ),
-      body: SingleChildScrollView(
-        controller: _scrollController,
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Padding(
-              padding: const EdgeInsets.all(20),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Image.asset(
-                    'assets/images/nameicon.png',
-                    height: 100,
-                    fit: BoxFit.contain,
-                  ),
-                  const SizedBox(height: 30),
-                  TextFormField(
-                    style: TextStyle(color: Colors.black),
-                    decoration: const InputDecoration(
-                      labelText: 'NOMBRE DEL PROYECTO',
-                      filled: true,
-                      fillColor: Colors.white,
-                      border: OutlineInputBorder(
-                        borderSide: BorderSide(color: Colors.black),
-                      ),
-                      focusedBorder: OutlineInputBorder(
-                        borderSide: BorderSide(color: Colors.black),
-                      ),
-                      labelStyle: TextStyle(color: Colors.black),
+      body: Column(
+        children: [
+          Expanded(
+            child: SingleChildScrollView(
+              controller: _scrollController,
+              child: Padding(
+                padding: const EdgeInsets.all(20),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Image.asset(
+                      'assets/images/nameicon.png',
+                      height: 100,
+                      fit: BoxFit.contain,
                     ),
-                  ),
-                  const SizedBox(height: 30),
-                  const Text(
-                    "Listar objetivos del proyecto",
-                    style: TextStyle(
-                        fontSize: 18,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.black),
-                    textAlign: TextAlign.left,
-                  ),
-                  const SizedBox(height: 25),
-                  Row(
-                    children: [
-                      Expanded(
-                        child: TextFormField(
-                          controller: objetivoController,
-                          style: TextStyle(color: Colors.black),
-                          decoration: const InputDecoration(
-                            labelText: 'OBJETIVOS',
-                            filled: true,
-                            fillColor: Colors.white,
-                            border: OutlineInputBorder(
-                              borderSide: BorderSide(color: Colors.black),
+                    const SizedBox(height: 30),
+                    TextFormField(
+                      style: TextStyle(color: Colors.black),
+                      decoration: const InputDecoration(
+                        labelText: 'NOMBRE DEL PROYECTO',
+                        filled: true,
+                        fillColor: Colors.white,
+                        border: OutlineInputBorder(
+                          borderSide: BorderSide(color: Colors.black),
+                        ),
+                        focusedBorder: OutlineInputBorder(
+                          borderSide: BorderSide(color: Colors.black),
+                        ),
+                        labelStyle: TextStyle(color: Colors.black),
+                      ),
+                    ),
+                    const SizedBox(height: 30),
+                    const Text(
+                      "Listar objetivos del proyecto",
+                      style: TextStyle(
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.black),
+                      textAlign: TextAlign.left,
+                    ),
+                    const SizedBox(height: 25),
+                    Row(
+                      children: [
+                        Expanded(
+                          child: TextFormField(
+                            controller: objetivoController,
+                            style: TextStyle(color: Colors.black),
+                            decoration: const InputDecoration(
+                              labelText: 'OBJETIVOS',
+                              filled: true,
+                              fillColor: Colors.white,
+                              border: OutlineInputBorder(
+                                borderSide: BorderSide(color: Colors.black),
+                              ),
+                              focusedBorder: OutlineInputBorder(
+                                borderSide: BorderSide(color: Colors.black),
+                              ),
+                              labelStyle: TextStyle(color: Colors.black),
                             ),
-                            focusedBorder: OutlineInputBorder(
-                              borderSide: BorderSide(color: Colors.black),
-                            ),
-                            labelStyle: TextStyle(color: Colors.black),
+                            maxLines: null,
                           ),
-                          maxLines: null,
                         ),
-                      ),
-                      IconButton(
-                        onPressed: agregarObjetivo,
-                        icon: Icon(Icons.add),
-                        color: Colors.brown,
-                      ),
-                    ],
-                  ),
-                  const SizedBox(height: 10),
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      for (int i = 0; i < objetivos.length; i++)
-                        ObjetivoWidget(
-                          objetivo: objetivos[i],
-                          onDelete: () => eliminarObjetivo(i),
+                        IconButton(
+                          onPressed: agregarObjetivo,
+                          icon: Icon(Icons.add),
+                          color: Colors.brown,
                         ),
-                    ],
-                  ),
-                  const SizedBox(height: 20),
-                  const Text(
-                    'OPCIONES DE COMPARTIR',
-                    style: TextStyle(
-                        fontSize: 18,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.black),
-                  ),
-                ],
+                      ],
+                    ),
+                    const SizedBox(height: 10),
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        for (int i = 0; i < objetivos.length; i++)
+                          ObjetivoWidget(
+                            objetivo: objetivos[i],
+                            onDelete: () => eliminarObjetivo(i),
+                          ),
+                      ],
+                    ),
+                    const SizedBox(height: 20),
+                    const Text(
+                      'OPCIONES DE COMPARTIR',
+                      style: TextStyle(
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.black),
+                    ),
+                  ],
+                ),
               ),
             ),
-            Padding(
-              padding:
-                  const EdgeInsets.symmetric(horizontal: 88, vertical: 150),
+          ),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 80, vertical: 20),
+            child: Align(
+              alignment: Alignment.bottomCenter,
               child: ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  // LOGICA PARA CREAR NUESTRO PROYECTO STEVEN
+                },
                 style: ElevatedButton.styleFrom(
                   padding: const EdgeInsets.symmetric(vertical: 18),
-                  primary: Colors.brown,
+                  primary: Colors.green,
                   shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(10),
+                    borderRadius: BorderRadius.circular(5),
                   ),
                   elevation: 4,
                 ),
                 child: const Text(
-                  ' CREA TU NUEVO PROYECTO ',
+                  ' CREAR PROYECTO ',
                   style: TextStyle(
-                    color: Colors.white,
+                    color: Colors.black,
                     fontSize: 16,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
               ),
             ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }

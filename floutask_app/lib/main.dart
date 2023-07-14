@@ -2,12 +2,11 @@ import 'package:floutask_app/screens/login.dart';
 import 'package:floutask_app/screens/home.dart';
 import 'package:flutter/material.dart';
 
-import 'mongodb.dart';
+
 
 
 void main() async  {
   WidgetsFlutterBinding.ensureInitialized();
-  await MongoDataBase.connect();
   runApp(MaterialApp(home: Login()));
 }
 

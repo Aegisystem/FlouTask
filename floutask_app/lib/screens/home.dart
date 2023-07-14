@@ -66,7 +66,8 @@ class _HomeState extends State<Home> {
               child: AnimatedContainer(
                 duration: Duration(milliseconds: 300),
                 curve: Curves.easeInOut,
-                transform: Matrix4.identity()..scale(_isButtonPressed ? 1.2 : 1.0),
+                transform: Matrix4.identity()
+                  ..scale(_isButtonPressed ? 1.2 : 1.0),
                 child: CircleAvatar(
                   radius: 20.0,
                   backgroundColor: Colors.white,
@@ -85,3 +86,4 @@ class _HomeState extends State<Home> {
       ),
     );
   }
+}

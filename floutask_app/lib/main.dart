@@ -1,10 +1,11 @@
+import 'package:floutask_app/screens/edit_project.dart';
 import 'package:floutask_app/screens/login.dart';
 import 'package:floutask_app/screens/home.dart';
 import 'package:flutter/material.dart';
 
 
 void main() {
-  runApp(MaterialApp(home: Login()));
+  runApp(MaterialApp(home: EditProject()));
 }
 
 class MyApp extends StatelessWidget {

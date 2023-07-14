@@ -1,5 +1,6 @@
 
 import 'package:floutask_app/screens/edit_project.dart';
+import 'package:floutask_app/screens/in_objective.dart';
 import 'package:floutask_app/screens/login.dart';
 import 'package:floutask_app/screens/home.dart';
 import 'package:floutask_app/screens/objective_card.dart';
@@ -8,7 +9,7 @@ import 'package:flutter/material.dart';
 
 
 void main() {
-  runApp(MaterialApp(home: EditProject()));
+  runApp(MaterialApp(home: EditObjective()));
 }
 
 class MyApp extends StatelessWidget {

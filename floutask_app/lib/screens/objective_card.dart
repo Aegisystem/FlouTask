@@ -21,8 +21,14 @@ class _ObjectiveCardState extends State<ObjectiveCard> {
   Widget build(BuildContext context) {
     return Card(
       elevation: 5.0,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(10.0),
+      ),
       margin: EdgeInsets.only(top: 20.0),
       child: ListTile(
+        onTap: () {
+
+        },
         leading: Checkbox(
           value: _check,
           onChanged: (value) {

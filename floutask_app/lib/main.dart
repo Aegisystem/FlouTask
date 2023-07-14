@@ -4,8 +4,9 @@ import 'package:floutask_app/screens/home.dart';
 import 'package:flutter/material.dart';
 
 
-void main() {
-  runApp(MaterialApp(home: EditProject()));
+void main() async  {
+  WidgetsFlutterBinding.ensureInitialized();
+  runApp(MaterialApp(home: Login()));
 }
 
 class MyApp extends StatelessWidget {

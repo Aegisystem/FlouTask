@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:floutask_app/screens/createProject.dart';
+import "dart:async";
 
 class Home extends StatefulWidget {
   @override
@@ -66,16 +68,28 @@ class _HomeState extends State<Home> {
               child: AnimatedContainer(
                 duration: Duration(milliseconds: 300),
                 curve: Curves.easeInOut,
-                transform: Matrix4.identity()
-                  ..scale(_isButtonPressed ? 1.2 : 1.0),
+                transform: Matrix4.identity()..scale(_isButtonPressed ? 1.95 : 1.0),
                 child: CircleAvatar(
                   radius: 20.0,
                   backgroundColor: Colors.white,
                   child: IconButton(
                     icon: Icon(Icons.add_sharp),
                     color: Colors.brown,
-                    onPressed: () {
-                      Navigator.pushNamed(context, '/addproject.dart');
+                    onPressed: () async {
+                      await Future.delayed(const Duration(milliseconds: 200)); // Ajusta el valor del retraso según tus necesidades
+
+                      Navigator.push(
+                        context,
+                        PageRouteBuilder(
+                          pageBuilder: (context, animation, secondaryAnimation) => CreateProject(),
+                          transitionsBuilder: (context, animation, secondaryAnimation, child) {
+                            return FadeTransition(
+                              opacity: animation,
+                              child: child,
+                            );
+                          },
+                        ),
+                      );
                     },
                   ),
                 ),

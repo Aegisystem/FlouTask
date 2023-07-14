@@ -1,8 +1,13 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:floutask_app/screens/createProject.dart';
 import "dart:async";
 
 class Home extends StatefulWidget {
+  final User user;
+
+  Home({required this.user});
+
   @override
   _HomeState createState() => _HomeState();
 }
@@ -95,6 +100,7 @@ class _HomeState extends State<Home> {
                 ),
               ),
             ),
+            Image.network(widget.user.photoURL!)
           ],
         ),
       ),

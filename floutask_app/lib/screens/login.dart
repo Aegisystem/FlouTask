@@ -33,7 +33,7 @@ class Login extends StatelessWidget {
                   if(user != null) {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => Home()),
+                      MaterialPageRoute(builder: (context) => Home(user: user,)),
                     );
                   }
                 },

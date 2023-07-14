@@ -9,7 +9,7 @@ import 'package:flutter/material.dart';
 
 
 void main() {
-  runApp(MaterialApp(home: EditObjective()));
+  runApp(MaterialApp(home: Login()));
 }
 
 class MyApp extends StatelessWidget {

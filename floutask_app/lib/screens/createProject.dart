@@ -42,13 +42,13 @@ class _CreateProjectState extends State<CreateProject> {
       appBar: AppBar(
         title: const Text('AÑADIR PROYECTO'),
         centerTitle: true,
-        backgroundColor: Colors.transparent,
+        backgroundColor: Colors.brown,
         elevation: 0,
         bottom: PreferredSize(
           preferredSize: const Size.fromHeight(5),
           child: Container(
             color: Colors.brown,
-            height: 10.0,
+            height: 5.0,
           ),
         ),
       ),

@@ -103,11 +103,11 @@ class _EditProjectState extends State<EditProject> {
                         ),
                       ),
                     ),
-                    ObjectiveCard(
+                    const ObjectiveCard(
                       title: 'Conectar BD',
                       subtitle: 'Para conectar la base de datos debes seguir estos pasos...',
                     ),
-                    ObjectiveCard(
+                    const ObjectiveCard(
                       title: 'Otra tarjeta',
                       subtitle: 'Descripción de la otra tarjeta...',
                     ),

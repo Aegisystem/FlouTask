@@ -1,7 +1,11 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:floutask_app/screens/createProject.dart';
-import "dart:async";
+import 'dart:async';
+
+import 'package:floutask_app/services/Authenticator.dart';
+
+import 'login.dart';
 
 class Home extends StatefulWidget {
   final User user;
@@ -14,6 +18,14 @@ class Home extends StatefulWidget {
 
 class _HomeState extends State<Home> {
   bool _isButtonPressed = false;
+
+  void _cerrarSesion() async {
+    await Authenticator.cerrarSesion();
+    Navigator.pushReplacement(
+      context,
+      MaterialPageRoute(builder: (context) => Login()),
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -108,18 +120,21 @@ class _HomeState extends State<Home> {
           Positioned(
             bottom: 16.0,
             left: 16.0,
-            child: Container(
-              width: 40.0,
-              height: 40.0,
-              decoration: BoxDecoration(
-                shape: BoxShape.circle,
-                color: Colors.white,
-              ),
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(40.0),
-                child: Image.network(
-                  widget.user.photoURL!,
-                  fit: BoxFit.cover,
+            child: InkWell(
+              onTap: _cerrarSesion,
+              child: Container(
+                width: 40.0,
+                height: 40.0,
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  color: Colors.white,
+                ),
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(40.0),
+                  child: Image.network(
+                    widget.user.photoURL!,
+                    fit: BoxFit.cover,
+                  ),
                 ),
               ),
             ),

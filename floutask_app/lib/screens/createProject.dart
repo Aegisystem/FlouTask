@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:floutask_app/screens/home.dart';
 
 class CreateProject extends StatefulWidget {
   const CreateProject({Key? key}) : super(key: key);
@@ -151,11 +153,13 @@ class _CreateProjectState extends State<CreateProject> {
               alignment: Alignment.bottomCenter,
               child: ElevatedButton(
                 onPressed: () {
-                  // LOGICA PARA CREAR NUESTRO PROYECTO
+                  Navigator.pop(context);
+                  //Firebase logic
+
                 },
                 style: ElevatedButton.styleFrom(
                   padding: const EdgeInsets.symmetric(vertical: 18),
-                  primary: Colors.brown,
+                  primary: Colors.green,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(10),
                   ),
@@ -163,12 +167,11 @@ class _CreateProjectState extends State<CreateProject> {
                 ),
                 child: Container(
                   decoration: BoxDecoration(
-                    color: Colors.brown,
-                    borderRadius: BorderRadius.circular(10),
+                    color: Colors.green,
                     boxShadow: [
                       BoxShadow(
-                        color: Colors.brown.withOpacity(0.5),
-                        offset: const Offset(0, 3),
+                        color: Colors.brown.withOpacity(0),
+                        offset: const Offset(0, 0),
                         blurRadius: 6,
                       ),
                     ],
@@ -191,7 +194,7 @@ class _CreateProjectState extends State<CreateProject> {
                       Text(
                         'CREAR PROYECTO',
                         style: TextStyle(
-                          color: Colors.red,
+                          color: Colors.black,
                           fontSize: 16,
                         ),
                       ),
